@@ -32,3 +32,18 @@ How to parse the data
 
 Edit the `config.py` file with the approriate locations of the `train/` and `test/` folder
 (provided by the competition organizers).
+
+After this, execute the `parse_data.py` script.
+
+How to find a good model
+------------------------
+
+Execute the `cross_validation.py` script to find the most suitable model. Use the `--help`
+option of the script for details on optional arguments.
+
+How to predict on the test data
+-------------------------------
+
+Execute the `predict.py` script. It will perform cross-validation again (given the small
+runtime), but you may also supply manual parameters. Have a look at the options in 
+using `--help`.
