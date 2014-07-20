@@ -7,6 +7,10 @@ website below for details on the challenge:
 
 https://sites.google.com/site/predictivechallenge2014/home
 
+Contact
+-------
+
+- Flavio Figueiredo <flaviov@dcc.ufmg.br>
 
 Dependencies
 ------------
@@ -33,7 +37,9 @@ How to parse the data
 Edit the `config.py` file with the approriate locations of the `train/` and `test/` folder
 (provided by the competition organizers).
 
-After this, execute the `parse_data.py` script.
+After this, execute the `parse_data.py` script::
+
+   python parse_data.py
 
 How to find a good model
 ------------------------
