@@ -45,17 +45,10 @@ if __name__ == '__main__':
     X_train, T12_train, hosts_train = myio.read_features(test=False)
     Y_train = myio.read_response_train()
     
-    cv = cross_validation.StratifiedKFold(hosts_train, 2)
-    for first_half, second_half in cv:
-        X_train = X_train[first_half]
-        Y_train = Y_train[first_half]
-        T12_train = T12_train[first_half]
-        break
-
-    for k in [2, 4, 8, 16, 32, 64, 128]:
+    for k in [1, 2, 4, 8, 16, 32, 64, 128]:
         D = transform_km(T12_train, k)
         X_train_new = np.hstack((D,  X_train))
     
         model = OLS()
         model.fit(X_train_new, Y_train)
-        print(np.sqrt(model.G.mean(axis=0)))
+        print(k, np.sqrt(model.G.mean(axis=0)))

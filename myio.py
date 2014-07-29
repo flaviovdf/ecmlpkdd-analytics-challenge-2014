@@ -23,6 +23,84 @@ _48H_SERIES_NAMES = '%s_48h_series_train.csv'
 TRAIN_CSV_FPATH = 'data_train.csv'
 TEST_CSV_FPATH = 'data_test.csv'
 
+def read_features_news(test=False):
+    '''
+    Loads the features used for the news model
+
+    Parameters
+    ----------
+    test : bool
+        Indicates if the test should be loaded instead of the train
+
+    Returns
+    -------
+    X : pandas dataframe of features ; shape = (pages, n_features)
+    '''
+    df = read_csv(test)
+    
+    pts_start = 0
+    pts_end = 12
+    pts = range(pts_start, pts_end)
+
+    idx_visits = ['series_visits_%d' % x for x in pts]
+    idx_twitter = ['series_twitter_%d' % x for x in pts]
+    idx_facebook = ['series_facebook_%d' % x for x in pts]
+
+    #Captures the growth of each time series
+    vals_visits = np.asarray([df[idx_visits].values.sum(axis=1)]).T
+    vals_twitter = np.asarray([df[idx_twitter].values.sum(axis=1)]).T
+    vals_facebook = np.asarray([df[idx_facebook].values.sum(axis=1)]).T
+    
+    #Log the values
+    vals_visits = np.log(1 + vals_visits)
+    vals_twitter = np.log(1 + vals_twitter)
+    vals_facebook = np.log(1 + vals_facebook)
+
+    #The features used for regression
+    X = np.hstack((
+
+        vals_visits,
+        vals_twitter,
+        vals_facebook,
+   
+        vals_visits * vals_twitter,
+        vals_visits * vals_facebook,
+        vals_twitter * vals_facebook,
+        
+        vals_visits ** 2,
+        vals_twitter ** 2,
+        vals_facebook ** 2,
+        ))
+    
+    return X
+
+def read_features_ml(test=False, series='visits'):
+    '''
+    Loads the features used for the ML model.
+
+    Parameters
+    ----------
+    test : bool
+        Indicates if the test should be loaded instead of the train
+
+    series : str
+        The time series to use
+
+    Returns
+    -------
+    X : pandas dataframe of features ; shape = (pages, n_features)
+    '''
+    df = read_csv(test)
+    
+    pts_start = 0
+    pts_end = 12
+    pts = range(pts_start, pts_end)
+    idx = ['series_%s_%d' % (series, x) for x in pts]
+    
+    X = np.log(1 + df[idx].values.cumsum(axis=1))
+
+    return X
+
 def read_features(test=False):
     '''
     Loads the features used for regression and the 12 points visits
