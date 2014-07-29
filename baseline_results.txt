@@ -1,0 +1,144 @@
+ML visits
+[ 1.29953044  1.36240543  2.11480817]
+
+ML facebook
+[ 4.62235653  1.54670962  1.79373197]
+
+ML twitter
+[ 4.52304807  0.85290621  2.50124576]
+
+News
+[ 1.26701665  0.78649781  1.52534645]
+
+RBF visits
+sigma num_dists alpha rmse
+0.001 10 0.1 [ 1.28577815  1.36222075  2.11381281]
+sigma num_dists alpha rmse
+0.001 50 0.1 [ 1.29944678  1.36241254  2.11480336]
+sigma num_dists alpha rmse
+0.001 100 0.1 [ 1.19743371  1.35971419  2.10952758]
+sigma num_dists alpha rmse
+0.01 10 0.1 [ 1.28572685  1.36223967  2.11368831]
+sigma num_dists alpha rmse
+0.01 50 0.1 [ 1.2532141   1.36110031  2.11226666]
+sigma num_dists alpha rmse
+0.01 100 0.1 [ 1.2681165   1.36187791  2.11382296]
+sigma num_dists alpha rmse
+0.1 10 0.1 [ 1.24212077  1.36077249  2.11220915]
+sigma num_dists alpha rmse
+0.1 50 0.1 [ 1.23495007  1.36195717  2.11278327]
+sigma num_dists alpha rmse
+0.1 100 100.0 [ 1.28277809  1.36227034  2.11396432]
+sigma num_dists alpha rmse
+1 10 0.1 [ 1.15215157  1.35635792  2.09789273]
+sigma num_dists alpha rmse
+1 50 0.1 [ 1.12700243  1.34871206  2.08612552]
+sigma num_dists alpha rmse
+1 100 0.01 [ 1.09022625  1.34422198  2.07837051]
+sigma num_dists alpha rmse
+10 10 0.001 [ 1.1064113   1.34797629  2.0820929 ]
+sigma num_dists alpha rmse
+10 50 0.001 [ 1.09207611  1.34438499  2.07522697]
+sigma num_dists alpha rmse
+10 100 0.001 [ 1.08853751  1.34242512  2.07227419]
+sigma num_dists alpha rmse
+100 10 0.001 [ 1.16294291  1.36149387  2.10827736]
+sigma num_dists alpha rmse
+100 50 0.001 [ 1.16071921  1.36042395  2.10571022]
+sigma num_dists alpha rmse
+100 100 0.001 [ 1.1597684   1.35990861  2.10447616]
+sigma num_dists alpha rmse
+1000 10 0.1 [ 1.16306926  1.36179143  2.10902855]
+sigma num_dists alpha rmse
+1000 50 0.1 [ 1.16306926  1.36179143  2.10902855]
+sigma num_dists alpha rmse
+1000 100 0.1 [ 1.16306926  1.36179143  2.10902855]
+
+RBF facebook
+sigma num_dists alpha rmse
+0.001 10 0.1 [ 2.24785708  1.40418324  1.62273324]
+sigma num_dists alpha rmse
+0.001 50 0.1 [ 2.20431597  1.40171655  1.61670035]
+sigma num_dists alpha rmse
+0.001 100 0.1 [ 2.15892465  1.39780557  1.60979008]
+sigma num_dists alpha rmse
+0.01 10 0.1 [ 2.23597312  1.40327169  1.62125824]
+sigma num_dists alpha rmse
+0.01 50 0.1 [ 2.19140233  1.399957    1.61288452]
+sigma num_dists alpha rmse
+0.01 100 0.1 [ 2.18592389  1.40033298  1.6121015 ]
+sigma num_dists alpha rmse
+0.1 10 0.1 [ 2.26172186  1.40545971  1.62463461]
+sigma num_dists alpha rmse
+0.1 50 0.1 [ 2.23855674  1.40413365  1.62145267]
+sigma num_dists alpha rmse
+0.1 100 0.1 [ 2.14907703  1.39788887  1.60793415]
+sigma num_dists alpha rmse
+1 10 0.1 [ 2.00239828  1.38474078  1.58296867]
+sigma num_dists alpha rmse
+1 50 0.1 [ 1.75837535  1.36248437  1.5453111 ]
+sigma num_dists alpha rmse
+1 100 0.1 [ 1.69500958  1.35656803  1.53413181]
+sigma num_dists alpha rmse
+10 10 0.001 [ 1.67904703  1.36011617  1.54023212]
+sigma num_dists alpha rmse
+10 50 0.001 [ 1.67558718  1.35851945  1.53664557]
+sigma num_dists alpha rmse
+10 100 0.001 [ 1.67268772  1.3568139   1.53514507]
+sigma num_dists alpha rmse
+100 10 0.001 [ 1.68790422  1.3655881   1.5563454 ]
+sigma num_dists alpha rmse
+100 50 0.001 [ 1.68786165  1.36558796  1.55617195]
+sigma num_dists alpha rmse
+100 100 0.001 [ 1.68781397  1.36558831  1.55607109]
+sigma num_dists alpha rmse
+1000 10 0.1 [ 1.68791986  1.36561952  1.55645796]
+sigma num_dists alpha rmse
+1000 50 0.1 [ 1.68791986  1.36561952  1.55645796]
+sigma num_dists alpha rmse
+1000 100 0.1 [ 1.68791986  1.36561952  1.55645796]
+
+ML twitter
+sigma num_dists alpha rmse
+0.001 10 0.1 [ 2.1081647   0.80443533  2.189173  ]
+sigma num_dists alpha rmse
+0.001 50 0.1 [ 2.07025253  0.80216079  2.18461636]
+sigma num_dists alpha rmse
+0.001 100 0.1 [ 1.99016238  0.79883378  2.17565107]
+sigma num_dists alpha rmse
+0.01 10 0.1 [ 2.15535959  0.80652373  2.19478636]
+sigma num_dists alpha rmse
+0.01 50 0.1 [ 2.12389447  0.80542284  2.19098017]
+sigma num_dists alpha rmse
+0.01 100 0.1 [ 2.03447864  0.80035013  2.18024129]
+sigma num_dists alpha rmse
+0.1 10 0.1 [ 2.12607684  0.80535756  2.19111736]
+sigma num_dists alpha rmse
+0.1 50 0.1 [ 2.03728384  0.80026458  2.18159086]
+sigma num_dists alpha rmse
+0.1 100 0.1 [ 2.03486595  0.80075507  2.18231451]
+sigma num_dists alpha rmse
+1 10 0.1 [ 1.93730794  0.79350139  2.17608596]
+sigma num_dists alpha rmse
+1 50 0.1 [ 1.7106442   0.78029039  2.15299407]
+sigma num_dists alpha rmse
+1 100 0.1 [ 1.70092     0.77948011  2.1509219 ]
+sigma num_dists alpha rmse
+10 10 0.001 [ 1.69668624  0.78317253  2.1563725 ]
+sigma num_dists alpha rmse
+10 50 0.001 [ 1.69574497  0.78131653  2.15339869]
+sigma num_dists alpha rmse
+10 100 0.001 [ 1.69516405  0.78105365  2.15224426]
+sigma num_dists alpha rmse
+100 10 0.001 [ 1.69899256  0.7881646   2.1605623 ]
+sigma num_dists alpha rmse
+100 50 0.001 [ 1.69898364  0.78815403  2.16054302]
+sigma num_dists alpha rmse
+100 100 0.001 [ 1.698963    0.78813259  2.16050003]
+sigma num_dists alpha rmse
+1000 10 0.1 [ 1.69891777  0.78818622  2.16053153]
+sigma num_dists alpha rmse
+1000 50 0.1 [ 1.69891777  0.78818622  2.16053153]
+sigma num_dists alpha rmse
+1000 100 0.1 [ 1.69891777  0.78818622  2.16053153]
+
