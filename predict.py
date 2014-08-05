@@ -13,7 +13,6 @@ if __name__ == '__main__':
     Y_train = myio.read_response_train()
    
     X_test, T12_test, _ = myio.load_features(test=True)
-    T12_test = np.log(1 + T12_test)
     
     T = np.concatenate((T12_train, T12_test), axis=0)
     
